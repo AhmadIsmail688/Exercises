@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		3994B82B2878D3A20023B5B6 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994B82A2878D3A20023B5B6 /* ExerciseCell.swift */; };
 		3994B82D2878D8540023B5B6 /* ExerciseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994B82C2878D8540023B5B6 /* ExerciseCellViewModel.swift */; };
+		3994B8302878F5410023B5B6 /* ApiType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994B82F2878F5410023B5B6 /* ApiType.swift */; };
+		3994B8322878F5900023B5B6 /* ExercisesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994B8312878F5900023B5B6 /* ExercisesApi.swift */; };
+		3994B8362878F6490023B5B6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994B8352878F6490023B5B6 /* NetworkManager.swift */; };
+		3994B8382878F6580023B5B6 /* ExercisesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994B8372878F6580023B5B6 /* ExercisesService.swift */; };
+		3994B83B2878F9570023B5B6 /* JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994B83A2878F9570023B5B6 /* JsonDecoder.swift */; };
+		3994B83E2878FB380023B5B6 /* MockExercisesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994B83D2878FB380023B5B6 /* MockExercisesService.swift */; };
 		39C2B8F528787E4E009B9140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C2B8F428787E4E009B9140 /* AppDelegate.swift */; };
 		39C2B8F728787E4E009B9140 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C2B8F628787E4E009B9140 /* SceneDelegate.swift */; };
 		39C2B8F928787E4E009B9140 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C2B8F828787E4E009B9140 /* ViewController.swift */; };
@@ -43,6 +49,12 @@
 /* Begin PBXFileReference section */
 		3994B82A2878D3A20023B5B6 /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
 		3994B82C2878D8540023B5B6 /* ExerciseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCellViewModel.swift; sourceTree = "<group>"; };
+		3994B82F2878F5410023B5B6 /* ApiType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiType.swift; sourceTree = "<group>"; };
+		3994B8312878F5900023B5B6 /* ExercisesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesApi.swift; sourceTree = "<group>"; };
+		3994B8352878F6490023B5B6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3994B8372878F6580023B5B6 /* ExercisesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesService.swift; sourceTree = "<group>"; };
+		3994B83A2878F9570023B5B6 /* JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoder.swift; sourceTree = "<group>"; };
+		3994B83D2878FB380023B5B6 /* MockExercisesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExercisesService.swift; sourceTree = "<group>"; };
 		39C2B8F128787E4E009B9140 /* Exercises.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercises.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39C2B8F428787E4E009B9140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39C2B8F628787E4E009B9140 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +123,50 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		3994B82E2878F51E0023B5B6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3994B8332878F6290023B5B6 /* Api */,
+				3994B8342878F6320023B5B6 /* NetworkManager */,
+				3994B83C2878FB1B0023B5B6 /* Mock */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3994B8332878F6290023B5B6 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				3994B82F2878F5410023B5B6 /* ApiType.swift */,
+				3994B8312878F5900023B5B6 /* ExercisesApi.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		3994B8342878F6320023B5B6 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				3994B8352878F6490023B5B6 /* NetworkManager.swift */,
+				3994B8372878F6580023B5B6 /* ExercisesService.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		3994B8392878F9480023B5B6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3994B83A2878F9570023B5B6 /* JsonDecoder.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3994B83C2878FB1B0023B5B6 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				3994B83D2878FB380023B5B6 /* MockExercisesService.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		39C2B8E828787E4E009B9140 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +193,8 @@
 				39C2B9272878CB24009B9140 /* Dummy Data */,
 				39C2B924287897F6009B9140 /* Model */,
 				3994B8272878D3860023B5B6 /* Modules */,
+				3994B82E2878F51E0023B5B6 /* Network */,
+				3994B8392878F9480023B5B6 /* Helpers */,
 				39C2B8F428787E4E009B9140 /* AppDelegate.swift */,
 				39C2B8F628787E4E009B9140 /* SceneDelegate.swift */,
 				39C2B8F828787E4E009B9140 /* ViewController.swift */,
@@ -320,8 +378,14 @@
 			files = (
 				39C2B8F928787E4E009B9140 /* ViewController.swift in Sources */,
 				39C2B926287897FE009B9140 /* Exercise.swift in Sources */,
+				3994B8362878F6490023B5B6 /* NetworkManager.swift in Sources */,
+				3994B83E2878FB380023B5B6 /* MockExercisesService.swift in Sources */,
+				3994B8382878F6580023B5B6 /* ExercisesService.swift in Sources */,
 				39C2B8F528787E4E009B9140 /* AppDelegate.swift in Sources */,
+				3994B8322878F5900023B5B6 /* ExercisesApi.swift in Sources */,
 				3994B82D2878D8540023B5B6 /* ExerciseCellViewModel.swift in Sources */,
+				3994B8302878F5410023B5B6 /* ApiType.swift in Sources */,
+				3994B83B2878F9570023B5B6 /* JsonDecoder.swift in Sources */,
 				39C2B9292878CB39009B9140 /* DummyExercise.swift in Sources */,
 				39C2B8F728787E4E009B9140 /* SceneDelegate.swift in Sources */,
 				3994B82B2878D3A20023B5B6 /* ExerciseCell.swift in Sources */,
