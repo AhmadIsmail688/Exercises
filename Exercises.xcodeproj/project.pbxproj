@@ -16,6 +16,8 @@
 		39C2B90C28787E51009B9140 /* ExercisesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C2B90B28787E51009B9140 /* ExercisesTests.swift */; };
 		39C2B91628787E51009B9140 /* ExercisesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C2B91528787E51009B9140 /* ExercisesUITests.swift */; };
 		39C2B91828787E51009B9140 /* ExercisesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C2B91728787E51009B9140 /* ExercisesUITestsLaunchTests.swift */; };
+		39C2B926287897FE009B9140 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C2B925287897FE009B9140 /* Exercise.swift */; };
+		39C2B9292878CB39009B9140 /* DummyExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C2B9282878CB39009B9140 /* DummyExercise.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		39C2B91128787E51009B9140 /* ExercisesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExercisesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39C2B91528787E51009B9140 /* ExercisesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesUITests.swift; sourceTree = "<group>"; };
 		39C2B91728787E51009B9140 /* ExercisesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		39C2B925287897FE009B9140 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		39C2B9282878CB39009B9140 /* DummyExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyExercise.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		39C2B8F328787E4E009B9140 /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
+				39C2B9272878CB24009B9140 /* Dummy Data */,
+				39C2B924287897F6009B9140 /* Model */,
 				39C2B8F428787E4E009B9140 /* AppDelegate.swift */,
 				39C2B8F628787E4E009B9140 /* SceneDelegate.swift */,
 				39C2B8F828787E4E009B9140 /* ViewController.swift */,
@@ -125,6 +131,22 @@
 				39C2B91728787E51009B9140 /* ExercisesUITestsLaunchTests.swift */,
 			);
 			path = ExercisesUITests;
+			sourceTree = "<group>";
+		};
+		39C2B924287897F6009B9140 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				39C2B925287897FE009B9140 /* Exercise.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39C2B9272878CB24009B9140 /* Dummy Data */ = {
+			isa = PBXGroup;
+			children = (
+				39C2B9282878CB39009B9140 /* DummyExercise.swift */,
+			);
+			path = "Dummy Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +281,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				39C2B8F928787E4E009B9140 /* ViewController.swift in Sources */,
+				39C2B926287897FE009B9140 /* Exercise.swift in Sources */,
 				39C2B8F528787E4E009B9140 /* AppDelegate.swift in Sources */,
+				39C2B9292878CB39009B9140 /* DummyExercise.swift in Sources */,
 				39C2B8F728787E4E009B9140 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
