@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3994B82B2878D3A20023B5B6 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994B82A2878D3A20023B5B6 /* ExerciseCell.swift */; };
+		3994B82D2878D8540023B5B6 /* ExerciseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994B82C2878D8540023B5B6 /* ExerciseCellViewModel.swift */; };
 		39C2B8F528787E4E009B9140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C2B8F428787E4E009B9140 /* AppDelegate.swift */; };
 		39C2B8F728787E4E009B9140 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C2B8F628787E4E009B9140 /* SceneDelegate.swift */; };
 		39C2B8F928787E4E009B9140 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C2B8F828787E4E009B9140 /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3994B82A2878D3A20023B5B6 /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
+		3994B82C2878D8540023B5B6 /* ExerciseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCellViewModel.swift; sourceTree = "<group>"; };
 		39C2B8F128787E4E009B9140 /* Exercises.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercises.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39C2B8F428787E4E009B9140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39C2B8F628787E4E009B9140 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +86,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3994B8272878D3860023B5B6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3994B8282878D3910023B5B6 /* ExercisesList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3994B8282878D3910023B5B6 /* ExercisesList */ = {
+			isa = PBXGroup;
+			children = (
+				3994B8292878D3980023B5B6 /* Cell */,
+			);
+			path = ExercisesList;
+			sourceTree = "<group>";
+		};
+		3994B8292878D3980023B5B6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3994B82A2878D3A20023B5B6 /* ExerciseCell.swift */,
+				3994B82C2878D8540023B5B6 /* ExerciseCellViewModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		39C2B8E828787E4E009B9140 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +136,7 @@
 			children = (
 				39C2B9272878CB24009B9140 /* Dummy Data */,
 				39C2B924287897F6009B9140 /* Model */,
+				3994B8272878D3860023B5B6 /* Modules */,
 				39C2B8F428787E4E009B9140 /* AppDelegate.swift */,
 				39C2B8F628787E4E009B9140 /* SceneDelegate.swift */,
 				39C2B8F828787E4E009B9140 /* ViewController.swift */,
@@ -291,8 +321,10 @@
 				39C2B8F928787E4E009B9140 /* ViewController.swift in Sources */,
 				39C2B926287897FE009B9140 /* Exercise.swift in Sources */,
 				39C2B8F528787E4E009B9140 /* AppDelegate.swift in Sources */,
+				3994B82D2878D8540023B5B6 /* ExerciseCellViewModel.swift in Sources */,
 				39C2B9292878CB39009B9140 /* DummyExercise.swift in Sources */,
 				39C2B8F728787E4E009B9140 /* SceneDelegate.swift in Sources */,
+				3994B82B2878D3A20023B5B6 /* ExerciseCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
