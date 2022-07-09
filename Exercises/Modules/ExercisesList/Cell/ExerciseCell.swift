@@ -13,28 +13,37 @@ struct ExerciseCell: View {
     var viewModel: ExerciseCellViewModel
 
     var body: some View {
-        VStack(spacing: 10) {
+        VStack(spacing: 0) {
             image
+            Divider()
             text
         }
-        .padding()
+        .background(Color(UIColor.systemBackground))
+        .cornerRadius(10)
+        .shadow(radius: 1)
     }
     
     var image: some View {
-        ZStack {
-            Image(systemName: "figure.walk")
-                .resizable()
-                .foregroundColor(.secondary)
-            KFImage(viewModel.mainImage)
-                .resizable()
-        }
-        .aspectRatio(contentMode: .fit)
-        .padding()
+        KFImage(viewModel.mainImage)
+            .resizable()
+            .placeholder{
+                Image("exercisePlaceholder")
+                    .resizable()
+                    .foregroundColor(.secondary)
+                    .padding(7)
+            }
+            .aspectRatio(contentMode: .fit)
+            .padding()
+            .frame(height: 150)
     }
     
     var text: some View {
         Text(viewModel.name)
-            .font(.body)
+            .font(.callout)
+            .lineLimit(2)
+            .multilineTextAlignment(.center)
+            .frame(height: 50)
+            .padding(6)
     }
 }
 

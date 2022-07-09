@@ -15,6 +15,9 @@
 		3994B8382878F6580023B5B6 /* ExercisesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994B8372878F6580023B5B6 /* ExercisesService.swift */; };
 		3994B83B2878F9570023B5B6 /* JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994B83A2878F9570023B5B6 /* JsonDecoder.swift */; };
 		3994B83E2878FB380023B5B6 /* MockExercisesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994B83D2878FB380023B5B6 /* MockExercisesService.swift */; };
+		3994B8402878FC120023B5B6 /* ExercisesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994B83F2878FC120023B5B6 /* ExercisesList.swift */; };
+		3994B8422878FC1C0023B5B6 /* ExercisesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994B8412878FC1C0023B5B6 /* ExercisesListViewModel.swift */; };
+		3994B844287A06BF0023B5B6 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994B843287A06BF0023B5B6 /* Identifiable.swift */; };
 		39C2B8F528787E4E009B9140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C2B8F428787E4E009B9140 /* AppDelegate.swift */; };
 		39C2B8F728787E4E009B9140 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C2B8F628787E4E009B9140 /* SceneDelegate.swift */; };
 		39C2B8F928787E4E009B9140 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C2B8F828787E4E009B9140 /* ViewController.swift */; };
@@ -55,6 +58,9 @@
 		3994B8372878F6580023B5B6 /* ExercisesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesService.swift; sourceTree = "<group>"; };
 		3994B83A2878F9570023B5B6 /* JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoder.swift; sourceTree = "<group>"; };
 		3994B83D2878FB380023B5B6 /* MockExercisesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExercisesService.swift; sourceTree = "<group>"; };
+		3994B83F2878FC120023B5B6 /* ExercisesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesList.swift; sourceTree = "<group>"; };
+		3994B8412878FC1C0023B5B6 /* ExercisesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesListViewModel.swift; sourceTree = "<group>"; };
+		3994B843287A06BF0023B5B6 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		39C2B8F128787E4E009B9140 /* Exercises.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercises.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39C2B8F428787E4E009B9140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39C2B8F628787E4E009B9140 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				3994B8292878D3980023B5B6 /* Cell */,
+				3994B83F2878FC120023B5B6 /* ExercisesList.swift */,
+				3994B8412878FC1C0023B5B6 /* ExercisesListViewModel.swift */,
 			);
 			path = ExercisesList;
 			sourceTree = "<group>";
@@ -155,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				3994B83A2878F9570023B5B6 /* JsonDecoder.swift */,
+				3994B843287A06BF0023B5B6 /* Identifiable.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -380,13 +389,16 @@
 				39C2B926287897FE009B9140 /* Exercise.swift in Sources */,
 				3994B8362878F6490023B5B6 /* NetworkManager.swift in Sources */,
 				3994B83E2878FB380023B5B6 /* MockExercisesService.swift in Sources */,
+				3994B8422878FC1C0023B5B6 /* ExercisesListViewModel.swift in Sources */,
 				3994B8382878F6580023B5B6 /* ExercisesService.swift in Sources */,
 				39C2B8F528787E4E009B9140 /* AppDelegate.swift in Sources */,
 				3994B8322878F5900023B5B6 /* ExercisesApi.swift in Sources */,
+				3994B8402878FC120023B5B6 /* ExercisesList.swift in Sources */,
 				3994B82D2878D8540023B5B6 /* ExerciseCellViewModel.swift in Sources */,
 				3994B8302878F5410023B5B6 /* ApiType.swift in Sources */,
 				3994B83B2878F9570023B5B6 /* JsonDecoder.swift in Sources */,
 				39C2B9292878CB39009B9140 /* DummyExercise.swift in Sources */,
+				3994B844287A06BF0023B5B6 /* Identifiable.swift in Sources */,
 				39C2B8F728787E4E009B9140 /* SceneDelegate.swift in Sources */,
 				3994B82B2878D3A20023B5B6 /* ExerciseCell.swift in Sources */,
 			);
