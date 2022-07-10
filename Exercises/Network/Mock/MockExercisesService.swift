@@ -9,12 +9,14 @@ import Foundation
 
 class MockExercisesService: ExercisesService {
     
-    var isGetExercisesCalled = false
+    var isGetAllExercisesCalled = false
+    var allExercisesReturned = ExercisesResponse(results: [DummyExercise.defaultExercise])
+    
     var isGetExerciseWithIdCalled = false
     
     func getAllExercises() async throws -> ExercisesResponse {
-        isGetExercisesCalled = true
-        return ExercisesResponse(results: [DummyExercise.defaultExercise])
+        isGetAllExercisesCalled = true
+        return allExercisesReturned
     }
     
     func getExercise(id: Int) async throws -> Exercise {

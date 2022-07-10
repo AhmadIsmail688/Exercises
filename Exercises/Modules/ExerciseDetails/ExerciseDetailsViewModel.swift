@@ -15,7 +15,7 @@ import Foundation
     init(service: ExercisesService = NetworkManager.shared, exercise: Exercise) {
         self.service = service
         self.exercise = exercise
-        getVariations()
+        Task {await getVariations()}
     }
     
     @Published var variations = [ExerciseCellViewModel]()
@@ -29,9 +29,9 @@ import Foundation
         exercise.name
     }
     
-    func getVariations() {
-        exercise.variations.forEach { id in
-            Task {await getExercise(id: id)}
+    func getVariations() async {
+        for variationId in exercise.variations {
+            await getExercise(id: variationId)
         }
     }
     
