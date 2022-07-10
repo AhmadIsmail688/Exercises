@@ -25,7 +25,6 @@ struct ExercisesList: View {
                 message: Text(error.error.localizedDescription)
             )
         }
-
     }
     
     @ViewBuilder
@@ -33,22 +32,12 @@ struct ExercisesList: View {
         if viewModel.isLoading {
             ProgressView()
         } else {
-            cellsGrid
+            ScrollView {
+                ExercisesGrid(exercises: viewModel.exercises)
+            }
         }
     }
     
-    var cellsGrid: some View {
-        let gridItem = GridItem(.adaptive(minimum: 150, maximum: 300), spacing: 15)
-        let columns = [gridItem, gridItem]
-        return ScrollView {
-            LazyVGrid(columns: columns, spacing: 15) {
-                ForEach(viewModel.exercises) { exerciseViewModel in
-                    ExerciseCell(viewModel: exerciseViewModel)
-                }
-            }
-            .padding()
-        }
-    }
 }
 
 struct ExercisesList_Previews: PreviewProvider {

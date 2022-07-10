@@ -23,7 +23,7 @@ import Foundation
     func getExercises() async {
         isLoading = true; defer {isLoading = false}
         do {
-            self.exercises = try await service.getExercises().results.map{ExerciseCellViewModel(exercise: $0)}
+            self.exercises = try await service.getAllExercises().results.map{ExerciseCellViewModel(exercise: $0)}
         } catch {
             self.error = IdentifiableError(error: error)
         }

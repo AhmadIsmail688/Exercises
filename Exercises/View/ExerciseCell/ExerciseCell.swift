@@ -29,7 +29,7 @@ struct ExerciseCell: View {
             .placeholder{
                 Image("exercisePlaceholder")
                     .resizable()
-                    .foregroundColor(.secondary)
+                    .foregroundColor(Color(UIColor.systemGray))
                     .padding(7)
             }
             .aspectRatio(contentMode: .fit)
@@ -39,6 +39,7 @@ struct ExerciseCell: View {
     
     var text: some View {
         Text(viewModel.name)
+            .foregroundColor(.primary)
             .font(.callout)
             .lineLimit(2)
             .multilineTextAlignment(.center)

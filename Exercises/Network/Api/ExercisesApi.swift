@@ -8,7 +8,8 @@
 import Foundation
 
 enum ExercisesApi {
-    case getExercises
+    case getAllExercises
+    case getExercise(id: Int)
 }
 
 extension ExercisesApi: ApiType {
@@ -18,7 +19,10 @@ extension ExercisesApi: ApiType {
     
     var path: String {
         switch self {
-        case .getExercises: return "/exerciseinfo"
+        case .getAllExercises:
+            return "/exerciseinfo"
+        case .getExercise(let id):
+            return "/exerciseinfo/\(id)"
         }
     }
     
